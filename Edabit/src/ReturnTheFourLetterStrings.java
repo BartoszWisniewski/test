@@ -2,9 +2,9 @@ public class ReturnTheFourLetterStrings {
     //todo
     public static void main(String[] args) {
         String[] tableString = {"Ryan", "Kieran", "Jason", "Matt"};
-        System.out.println(isFourLetters(tableString).toString());
+     //   System.out.println(isFourLetters(tableString).toString());
     }
-    public static String[] isFourLetters(String[] s) {
+   /* public static String[] isFourLetters(String[] s) {
         int newLengthArray;
         for(int i =0; i < s.length; i++){
             newLengthArray=0;
@@ -20,5 +20,5 @@ public class ReturnTheFourLetterStrings {
                     newStringArray[k] = s[j];
                 }return newStringArray;
         }
-    }
+    }*/
 }
