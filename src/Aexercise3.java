@@ -1,8 +1,11 @@
+import java.util.Arrays;
 
 public class Aexercise3 {
     public static void main(String[] args) {
+        long start = System.nanoTime();
         int N = 4845;
         System.out.println(solution(N));
+        System.out.println("Time: "+(System.nanoTime()-start));
     }
 
     public static int solution(int N) {
@@ -14,13 +17,23 @@ public class Aexercise3 {
                 .sorted()
                 .toArray();
         String newString = "";
-        for (int i : intTab) {
+        /*for (int i : intTab) {
             newString = i + newString;
+        }*/
+
+
+        StringBuffer strB = new StringBuffer(newString);
+        for (int i = intTab.length-1; i >= 0; i--) {
+            strB.append(intTab[i]);
         }
+        newString = strB.toString();
+
+
         int result = Integer.valueOf(newString);
 
         //first solution
-        /*char[] nChar = strN.toCharArray();
+        /*String strN = String.valueOf(N);
+        char[] nChar = strN.toCharArray();
         int[] newIntArray = new int[nChar.length];
         for (int i = 0; i < nChar.length; i++) {
             newIntArray[i] = Character.getNumericValue(nChar[i]);

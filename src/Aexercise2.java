@@ -4,10 +4,11 @@ import java.util.Map;
 
 public class Aexercise2 {
     public static void main(String[] args) {
-
-        // String N = "13 DUP 4 POP 5 DUP DUP DUP + DUP + -";
-        String N = "13 4 12 21 4 + + + +";
+        long start = System.nanoTime();
+        String N = "13 DUP 4 POP 5 DUP DUP DUP + DUP + -";
+        //String N = "13 4 12 21 4 + + + +";
         System.out.println(solution(N));
+        System.out.println("Time: "+(System.nanoTime()-start));
     }
 
     public static int solution(String S) {
